@@ -1,0 +1,157 @@
+.home-component {
+    /* margin: 1.6ch; */
+    min-height: 66.5vh;
+    /* padding : 20px; */
+    padding : 40px 20px;
+    background: #f6f6f6;
+}
+
+/* loading */
+#loader {
+    /* position: absolute; */
+    left: 43%;
+    margin: 15px auto;
+    width: 100px;
+    height: 100px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    animation: loading 1500ms linear infinite;
+}
+
+#loader-inner {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-3px, -3px);
+}
+
+#loading {
+    display: block;
+    text-align: center;
+    position: relative;
+    bottom: 75px;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.item-showcase {
+    margin: 2.4rem 1.6rem;
+}
+
+.explore-heading {
+    /* margin-left: 1.5rem; */
+    /* font-size: 1.8rem; */
+    font-size: 23px;
+    position: relative;
+}
+
+.explore-heading>span::before {
+    content: "";
+    height: 0.28rem;
+    /* width: 12rem; */
+    width: 8rem;
+    background: var(--secondary-color);
+    border-radius: 0.1rem;
+    position: absolute;
+    top: 95%;
+    left: 0;
+    right: 0;
+}
+
+.product-collection {
+    /* margin: 0.8rem 0; */
+    margin: 45px 0;
+    /* display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap; */
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(14.4rem, 1fr));
+    gap: 20px 28px; */
+    /* grid-template-columns: repeat(auto-fill, minmax(17.4rem, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
+    gap: 70px 80px;
+}
+
+.grocery-card {
+    /* padding: 1.2rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border-radius: 1rem; */
+    box-shadow : rgba(170, 105, 95, 0.14) 0px 5px 15px;
+    /* background-color: var(--card-color); */
+    /* background-color: rgb(197, 229, 240); */
+    background-color: rgb(255 255 255);
+    transition: all 0.2s linear;
+    padding: 30px 30px;
+    border-radius: 8px;
+}
+
+.item-details {
+    font-family: 'Nunito', sans-serif;
+    cursor: default;
+    width: 100%;
+}
+
+.item-image {
+    width: 12rem;
+}
+
+.item-image img {
+    width: inherit;
+    object-fit: contain;
+    aspect-ratio: 1;
+}
+
+.item-name {
+    margin-top: 0.4rem;
+    /* width: 12rem; */
+    /* font-size: 0.9rem; */
+    min-height: 2.7rem;
+    max-height: 2.7rem;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.2s linear;
+}
+
+.item-name:hover {
+    max-height: auto;
+}
+
+.stock-and-price {
+    margin: 0.64rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stock-remaining {
+    padding: 0 0.24rem;
+    color: var(--stock-color);
+    border-radius: 0.16rem;
+}
+
+.explore-message {
+    margin: 3rem 0;
+}
+
+/* extra block */
+.extra-block {
+    flex-grow: 1;
+    margin-left: auto;
+}

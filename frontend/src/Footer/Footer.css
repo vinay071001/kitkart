@@ -1,0 +1,110 @@
+footer{
+    text-align: center;
+    margin-top: auto;
+    /* padding: 2rem 5rem; */
+    /* padding: 1rem 5rem; */
+    padding: 12px 5rem;
+    color: rgb(150,150,150);
+    background-color: rgb(0,0,0);
+    /* position: absolute; */
+    width: 100%;
+    bottom: 0px;
+}
+
+.footer-content-holder{
+    /* background : white; */
+    /* box-shadow: 0px 0px 90px white; */
+}
+.footer-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 15px 0px; */
+
+}
+.footer-div{
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 0.9rem;
+    /* margin: 3rem 3rem 0 0; */
+}
+.brand_logo{
+    color : blue;
+    font-size : 50px;
+    font-weight: 800;
+    display: none;
+}
+.brand-promo{
+    /* border: 2px solid blue;
+    box-shadow: 0px 2px 50px blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,1));
+
+    background:var(--card-color);
+    border-radius: 3rem;
+    padding: 1rem 1.5rem; */
+        /* border: 2px solid blue; */
+    /* box-shadow: 0px 2px 50px blue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,1));
+    /* background: var(--card-color); */
+    border-radius: 5px;
+    /* padding: 1rem 1.5rem; */
+    color: white;
+}
+.brand-img{
+    width: 3rem;
+}
+.brand-img img{
+    object-fit: contain;
+}
+.brand-name{
+    margin-left: 0.3rem;
+    /* font-size: 2rem; */
+    font-size: 25px;
+    font-family: 'Omegle';
+    transform: translateY(5px);
+}
+
+.footer-links{
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+.icon-collection{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap:1.2rem;
+}
+.icon{
+    display: inline-block;
+    fill: rgb(150,150,150);
+    height: 1.5rem;
+}
+.icon-large{
+    width: 4rem;
+}
+.icon-small{
+    width: 1.5rem;
+}
+.icon > svg{
+    transition: all 0.2s linear;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+#stripe{
+    transform: scale(1.5);
+}
+#flipkart{
+    transform: translateY(2px);
+}
